@@ -67,7 +67,7 @@ module.exports = {
             type: 'condition',
             options: {
                 variable: 'show_time',
-                value: 'show',
+                value: 'hide',
             },
             children: 1,
         },
@@ -76,7 +76,7 @@ module.exports = {
             type: 'condition',
             options: {
                 variable: 'show_time',
-                value: 'hide',
+                value: 'show',
             },
             children: 2,
         },
