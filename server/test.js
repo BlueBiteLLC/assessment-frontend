@@ -28,7 +28,8 @@ describe('API', () => {
 
 	describe('Integrations', () => {
 		describe('Weather', () => {
-			for (const { lon, lat, ...data } of VALUES.WEATHER_LOCATIONS) {
+			for (const data of VALUES.WEATHER_LOCATIONS) {
+                const { lon, lat } = data;
 				test(`${lon},${lat}`, async () => {
 					const response = await request(app)
 						.get('/integration/weather')

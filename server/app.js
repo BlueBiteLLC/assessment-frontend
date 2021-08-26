@@ -37,9 +37,8 @@ app.get('/integration/weather', (req, res) => {
 		lat === queryLat && lon === queryLon
 	));
 	if (weatherLocation) {
-		const { condition, conditionName, temperature, unit } = weatherLocation;
 		res.json({
-			data: { condition, conditionName, temperature, unit },
+			data: weatherLocation,
 		});
 	} else {
 		res.status(404).json({

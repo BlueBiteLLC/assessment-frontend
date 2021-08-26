@@ -40,7 +40,7 @@ module.exports = {
         {
             id: 3,
             type: 'condition',
-            option: {
+            options: {
                 variable: 'show_weather',
                 value: 'show',
             },

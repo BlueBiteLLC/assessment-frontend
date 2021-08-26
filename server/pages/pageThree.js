@@ -16,7 +16,7 @@ module.exports = {
 	lists: [
 		{
 			id: 0,
-			components: [3, 4]
+			components: [3, 4, 8, 9, 10]
 		},
         {
             id: 1,
@@ -28,19 +28,19 @@ module.exports = {
         },
         {
             id: 3,
-            components: [10, 7, 6],
+            components: [14, 11, 7, 6],
         },
         {
             id: 4,
-            components: [11, 5, 7],
+            components: [14, 12, 5, 7],
         },
         {
             id: 5,
-            components: [12, 6, 5],
+            components: [14, 13, 6, 5],
         },
         {
             id: 6,
-            components: [14],
+            components: [15],
         },
 	],
 	components: [
@@ -49,7 +49,7 @@ module.exports = {
             type: 'button',
             options: {
                 text: 'Show Time',
-                variable: 'time',
+                variable: 'show_time',
                 value: 'show',
             },
         },
@@ -58,7 +58,7 @@ module.exports = {
             type: 'button',
             options: {
                 text: 'Hide Time',
-                variable: 'time',
+                variable: 'show_time',
                 value: 'hide',
             },
         },
@@ -125,8 +125,17 @@ module.exports = {
             },
             children: 4,
         },
+        {
+            id: 10,
+            type: 'condition',
+            options: {
+                variable: 'location',
+                value: 'sd'
+            },
+            children: 5,
+        },
 		{
-			id: 10,
+			id: 11,
 			type: 'weather',
 			options: {
                 lon: VALUES.WEATHER_LOCATIONS[0].lon,
@@ -134,7 +143,7 @@ module.exports = {
 			}
 		},
         {
-			id: 11,
+			id: 12,
 			type: 'weather',
 			options: {
                 lon: VALUES.WEATHER_LOCATIONS[1].lon,
@@ -142,7 +151,7 @@ module.exports = {
 			}
 		},
         {
-			id: 12,
+			id: 13,
 			type: 'weather',
 			options: {
                 lon: VALUES.WEATHER_LOCATIONS[2].lon,
@@ -150,7 +159,7 @@ module.exports = {
 			}
 		},
         {
-            id: 13,
+            id: 14,
             type: 'condition',
             options: {
                 variable: 'show_time',
@@ -159,7 +168,7 @@ module.exports = {
             children: 6,
         },
         {
-            id: 14,
+            id: 15,
             type: 'time',
         },
 	],
