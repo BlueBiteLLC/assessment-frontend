@@ -58,7 +58,7 @@ module.exports.WEATHER_LOCATIONS = [
         conditionName: 'Rain',
         temperature: 20,
         unit: 'c',
-        location: 'Sydney, NSW',
+        location: 'Chicago, IL',
         upcomming: [
             {
                 day: 'Fri',
@@ -81,15 +81,15 @@ module.exports.WEATHER_LOCATIONS = [
 
 module.exports.IMAGES = [
     {
-        src: 'https://assets-global.website-files.com/5aa16619a722600001c19c3f/5ad4d8b3d3f2b047b6e10cde_cs-hero-adiparley2017.jpg',
-        alt: 'Sneakers and phone displaying a website. The text reads "We are working with Parley to transform marine plastic pollution into high performance sportswear. Spinning the problem into a solution. The threat into a thread. #ADIDASPARLEY"',
+        src: '/locations/new-york.png',
+        alt: 'Cartoon of New York skyline',
     },
     {
-        src: 'https://assets-global.website-files.com/5aa16619a722600001c19c3f/5acfb4387de76aed33f01386_cs-hero-adiomb.jpg',
-        alt: 'Socker ball with a stadium in the background. Phone tapping ball displays authentication certificate.',
+        src: '/locations/san-francisco.png',
+        alt: 'Cartoon of San Francisco skyline',
     },
     {
-        src: 'https://assets-global.website-files.com/5aa16619a722600001c19c3f/5ff4dc09cb46be5ae1c50a43_vita-coco-blue-bite-case-study.jpg',
-        alt: 'Stacked Vita Coco flavors. In front a held phone displays: "We think Vita Coco Pressed is impossible to hate.". One button say "Agree, I\'m obsessed!" and the other "Nah, not impressed"',
+        src: '/locations/chicago.png',
+        alt: 'Cartoon of Chicago skyline',
     },
 ]

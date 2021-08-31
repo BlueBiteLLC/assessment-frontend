@@ -8,17 +8,17 @@ module.exports = {
             initialValue: 'hide',
         },
     ],
-	lists: [
-		{
-			id: 0,
-			components: [1, 2, 3]
-		},
+    lists: [
+        {
+            id: 0,
+            components: [1, 2, 3]
+        },
         {
             id: 1,
-			components: [4]
+            components: [4]
         }
-	],
-	components: [
+    ],
+    components: [
         {
             id: 1,
             type: 'button',
@@ -46,13 +46,13 @@ module.exports = {
             },
             children: 1,
         },
-		{
-			id: 4,
-			type: 'weather',
-			options: {
+        {
+            id: 4,
+            type: 'weather',
+            options: {
                 lon: VALUES.WEATHER_LOCATIONS[1].lon,
                 lat: VALUES.WEATHER_LOCATIONS[1].lat,
-			}
-		},
-	],
+            }
+        },
+    ],
 };

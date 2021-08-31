@@ -3,7 +3,7 @@ const VALUES = require('../values');
 module.exports = {
     variables: [
         {
-            name: 'show_time',
+            name: 'show_image',
             type: 'string',
             initialValue: 'hide',
         },
@@ -13,11 +13,11 @@ module.exports = {
             initialValue: 'ny',
         },
     ],
-	lists: [
-		{
-			id: 0,
-			components: [3, 4, 8, 9, 10]
-		},
+    lists: [
+        {
+            id: 0,
+            components: [3, 4, 8, 9, 10]
+        },
         {
             id: 1,
             components: [1],
@@ -32,24 +32,32 @@ module.exports = {
         },
         {
             id: 4,
-            components: [14, 12, 5, 7],
+            components: [15, 12, 5, 7],
         },
         {
             id: 5,
-            components: [14, 13, 6, 5],
+            components: [16, 13, 6, 5],
         },
         {
             id: 6,
-            components: [15],
+            components: [17],
         },
-	],
-	components: [
+        {
+            id: 7,
+            components: [18],
+        },
+        {
+            id: 8,
+            components: [19],
+        },
+    ],
+    components: [
         {
             id: 1,
             type: 'button',
             options: {
                 text: 'Show Time',
-                variable: 'show_time',
+                variable: 'show_image',
                 value: 'show',
             },
         },
@@ -58,7 +66,7 @@ module.exports = {
             type: 'button',
             options: {
                 text: 'Hide Time',
-                variable: 'show_time',
+                variable: 'show_image',
                 value: 'hide',
             },
         },
@@ -66,7 +74,7 @@ module.exports = {
             id: 3,
             type: 'condition',
             options: {
-                variable: 'show_time',
+                variable: 'show_image',
                 value: 'hide',
             },
             children: 1,
@@ -75,7 +83,7 @@ module.exports = {
             id: 4,
             type: 'condition',
             options: {
-                variable: 'show_time',
+                variable: 'show_image',
                 value: 'show',
             },
             children: 2,
@@ -102,9 +110,9 @@ module.exports = {
             id: 7,
             type: 'button',
             options: {
-                text: 'Sydney',
+                text: 'Chicago',
                 variable: 'location',
-                value: 'sd',
+                value: 'ch',
             },
         },
         {
@@ -130,46 +138,75 @@ module.exports = {
             type: 'condition',
             options: {
                 variable: 'location',
-                value: 'sd'
+                value: 'ch'
             },
             children: 5,
         },
-		{
-			id: 11,
-			type: 'weather',
-			options: {
+        {
+            id: 11,
+            type: 'weather',
+            options: {
                 lon: VALUES.WEATHER_LOCATIONS[0].lon,
                 lat: VALUES.WEATHER_LOCATIONS[0].lat,
-			}
-		},
+            }
+        },
         {
-			id: 12,
-			type: 'weather',
-			options: {
+            id: 12,
+            type: 'weather',
+            options: {
                 lon: VALUES.WEATHER_LOCATIONS[1].lon,
                 lat: VALUES.WEATHER_LOCATIONS[1].lat,
-			}
-		},
+            }
+        },
         {
-			id: 13,
-			type: 'weather',
-			options: {
+            id: 13,
+            type: 'weather',
+            options: {
                 lon: VALUES.WEATHER_LOCATIONS[2].lon,
                 lat: VALUES.WEATHER_LOCATIONS[2].lat,
-			}
-		},
+            }
+        },
         {
             id: 14,
             type: 'condition',
             options: {
-                variable: 'show_time',
+                variable: 'show_image',
                 value: 'show',
             },
             children: 6,
         },
         {
             id: 15,
-            type: 'time',
+            type: 'condition',
+            options: {
+                variable: 'show_image',
+                value: 'show',
+            },
+            children: 7,
         },
-	],
+        {
+            id: 16,
+            type: 'condition',
+            options: {
+                variable: 'show_image',
+                value: 'show',
+            },
+            children: 8,
+        },
+        {
+            id: 17,
+            type: 'image',
+            options: VALUES.IMAGES[0],
+        },
+        {
+            id: 18,
+            type: 'image',
+            options: VALUES.IMAGES[1],
+        },
+        {
+            id: 19,
+            type: 'image',
+            options: VALUES.IMAGES[2],
+        },
+    ],
 };
