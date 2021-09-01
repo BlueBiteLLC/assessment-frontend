@@ -84,8 +84,28 @@ case of failure.
 
 ### GET /integrations/weather?lat=<lat>&lon=<lon>
 
-    Returns the weather information for specific coordinates used in pages.
+    Returns weather information for specific coordinates used in pages.
 
 ## Instructions
 
 ### Page One
+
+Use the page ID provided in the url path via the mock API's `GET /page/:id` route to get the page. \
+Use the page data to render the page as described in the mockups. You can assume the list with \
+id 0 will always be the pages root. The weather component will also require use of it's own API \
+route described above.
+
+### Page Two
+
+This page additionally includes variables, buttons, and conditions. Variables are set to initial \
+values when the page is loaded. Buttons are used set their current value. Conditions are \
+components that render their `children` list when the variable is equal to the given \
+value.
+
+On completion this page will look like the mockups and show and hide buttons should be functional.
+
+### Page Three
+
+This page has show and hide buttons as well as buttons which rotation through different locations. \
+You should check your implementation against this more complex page and resolve any bugs. \
+Again you can check your implementation against the mockups.
