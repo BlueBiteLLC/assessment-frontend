@@ -38,6 +38,11 @@ Returns a description of the page. Containing several parts:
 
 Returns weather information for specific coordinates used in pages.
 
+### Designs
+
+We utilize [Zeplin](https://zeplin.io/) to manage design requests. Please create a free account and send us your email/username so we can grant you access
+
+
 ## Requirements
 
 ### Part 1
