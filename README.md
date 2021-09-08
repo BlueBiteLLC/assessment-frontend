@@ -67,7 +67,7 @@ We utilize [Zeplin](https://zeplin.io/) to manage design requests. Please create
 This page additionally includes variables, as well as 2 new components: button, and condition.
 
 * Variables are set to their initial values when the page is loaded.
-* Buttons when pressed change a variables current value.
+* Buttons when clicked change a variables current value.
 * Conditions are components that render their `children` list when a specific variable is equal to the given value.
 
 On completion this page will look like the mockups and the show and hide buttons should function.
