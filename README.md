@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Imagine you are provided an API where you need to programatically render components on a page that an end user can view or interact with it. Each page will have a corresponding API building off of the previous one in increasing complexity to render the content. Within those pages ou will need to build and use components to match the provided mockups ([Figma](https://www.figma.com/proto/9NtrKC7KAudIqARPU4OzfL/Front-End-Assessment?page-id=0%3A1&node-id=40%3A16&viewport=241%2C48%2C0.73&scaling=scale-down&starting-point-node-id=40%3A16&show-proto-sidebar=1)).
+Imagine you are provided an API where you need to programatically render components on a page that an end user can view or interact with it. Each page will have a corresponding API building off of the previous one in increasing complexity to render the content. Within those pages you will need to build and use components to match the provided mockups ([Figma](https://www.figma.com/proto/9NtrKC7KAudIqARPU4OzfL/Front-End-Assessment?page-id=0%3A1&node-id=40%3A16&viewport=241%2C48%2C0.73&scaling=scale-down&starting-point-node-id=40%3A16&show-proto-sidebar=1)).
 
 To get started a react project is included. TypeScript is recommended but you can alternatively use straight JavaScript. CSS modules are supported using the `.module.css` extension alternatively you can use any styling tooling/library you choose. Feel free to add other dependencies as
 necessary.
