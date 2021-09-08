@@ -2,12 +2,12 @@
 
 ## Introduction
 
-Imagine you are provided an API where you need to programatically render components on a page based on a corrisponding page entity returned by the API. Within those pages ou will need to build and use components to match the provided mockups. Each page builds off of the previous one in increasing complexity.
+Imagine you are provided an API where you need to programatically render components on a page that an end user can view or interact with it. Each page will have a corresponding API building off of the previous one in increasing complexity to render the content. Within those pages ou will need to build and use components to match the provided mockups ([Figma](https://www.figma.com/proto/9NtrKC7KAudIqARPU4OzfL/Front-End-Assessment?page-id=0%3A1&node-id=40%3A16&viewport=241%2C48%2C0.73&scaling=scale-down&starting-point-node-id=40%3A16&show-proto-sidebar=1)).
 
-A base React project is included. TypeScript is recommended but you can alternatively use straight JavaScript. CSS modules are supported using the `.module.css` extension alternatively you can use any styling tooling/library you choose. Feel free to add other dependencies if you see
+To get started a react project is included. TypeScript is recommended but you can alternatively use straight JavaScript. CSS modules are supported using the `.module.css` extension alternatively you can use any styling tooling/library you choose. Feel free to add other dependencies as
 necessary.
 
-A mock API has been provided
+### API
 
 All responses return either a `data` property containing responses contents in the case of an `ok` response. Alternatively it may return an `error` property.
 
@@ -50,6 +50,9 @@ Returns weather information for specific coordinates used in pages.
 * Cross referencing the Page entity and the mockups to create the `image` and `weather` components. The weather component will also require use of it's own API route described above in the introduction section.
 * Using these components and the Page entity to render the page. You can assume the list with id 0 will always be the pages root.
 
+#### Mockups
+* [Part 1](https://app.zeplin.io/project/610d6d9d1936aa12f64a3a22/screen/612d1250e46281108433cf51)
+
 ### Part 2
 * Create Button Component
 * Create Condition Component
@@ -64,6 +67,9 @@ This page additionally includes variables, as well as 2 new components: button, 
 
 On completion this page will look like the mockups and the show and hide buttons should function.
 
+#### Mockups
+* [Part 2](https://app.zeplin.io/project/610d6d9d1936aa12f64a3a22/screen/612d1250a7910b16428c423f)
+
 ### Part 3
 * Test previous work against a more complex page
 * Fix any issues
@@ -75,6 +81,13 @@ This page has show and hide buttons as well as buttons which rotation through th
 locations. There is no additional functionality but you should check your implementation against \
 the more complex page configuration and resolve any issues. Again you can also check your \
 implementation against the mockups.
+
+#### Mockups
+* [Part 3](https://app.zeplin.io/project/610d6d9d1936aa12f64a3a22/screen/612d1250690879161563f338)
+* [Part 3 - NYC](https://app.zeplin.io/project/610d6d9d1936aa12f64a3a22/screen/612d125010adfb126b0a2b3a)
+* [Part 3 - SF](https://app.zeplin.io/project/610d6d9d1936aa12f64a3a22/screen/612d12505c510a15d11d2359)
+* [Part 3 - CH](https://app.zeplin.io/project/610d6d9d1936aa12f64a3a22/screen/612d125043099410f15afeb8)
+
 
 ## Submission
 Upon completion of the assessment, please email your point of contact at Blue Bite a link to the repository.
