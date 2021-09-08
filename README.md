@@ -95,15 +95,13 @@ Upon completion of the assessment, please email your point of contact at Blue Bi
 
 ## Local Setup
 
-1. Clone repo
-2. Create branch
-3. Install Node version specified in `.nvmrc`
-4. Use Yarn or NPM to install dependencies
-5. Use 2 terminal sessions to start both the development server and the API via:
+1. Clone repository into your GitHub account
+2. Install Node version specified in `.nvmrc`
+3. Use Yarn or NPM to install dependencies
+4. Use 2 terminal sessions to start both the development server and the API via:
     a. `yarn run start` OR `npm run start`
     b. `yarn run start-server` OR `npm run start-server`
-6. Follow steps in the `Instruction` section. Commit your work as needed.
-7. On completion push up your branch.
+5. Follow steps in the `Requirements` section. Commit your work as needed.
 
 ### Available Scripts
 
